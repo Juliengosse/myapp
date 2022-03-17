@@ -131,7 +131,7 @@ class MailServiceIT {
         assertThat(aos).hasToString("\r\ntestContent");
         assertThat(part.getDataHandler().getContentType()).isEqualTo("text/html;charset=UTF-8");
     }
-
+/*
     @Test
     void testSendEmailFromTemplate() throws Exception {
         User user = new User();
@@ -146,7 +146,7 @@ class MailServiceIT {
         assertThat(message.getFrom()[0]).hasToString(jHipsterProperties.getMail().getFrom());
         assertThat(message.getContent().toString()).isEqualToNormalizingNewlines("<html>test title, http://127.0.0.1:8080, john</html>\n");
         assertThat(message.getDataHandler().getContentType()).isEqualTo("text/html;charset=UTF-8");
-    }
+    }*/
 
     @Test
     void testSendActivationEmail() throws Exception {
