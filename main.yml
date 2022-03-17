@@ -40,12 +40,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      # Runs a single command using the runners shell
-      - name: Install node.js packages
-        run: npm install)
+          
       # Runs a single command using the runners shell
       - name: Install node.js packages
         run: npm install
+        
       # Runs tests front
       - name: Tests front
         npm run ci: frontend:test 
+
+      # Runs tests back
+      - name: Test back
+        chmod +x mvnw && npm run ci: backend:test
