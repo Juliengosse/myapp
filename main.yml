@@ -51,4 +51,4 @@ jobs:
 
       # Runs tests back
       - name: Test back
-        chmod +x mvnw && npm run ci: backend:test
+        chmod +./mvnw && npm run ci: backend:test
